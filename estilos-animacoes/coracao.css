@@ -1,0 +1,15 @@
+.animacao-coracao path {
+    fill: none;
+    stroke: #9353FF;
+    stroke-width: 7px;
+    stroke-dasharray: 200; /*controla o tamanho do tracejado do contorno*/
+    stroke-dashoffset: 700; /*controla o deslocamento do tracejado*/
+    animation: desenhar 3s forwards;
+}
+
+@keyframes desenhar {
+    to {
+        stroke-dashoffset: 0;
+        fill: #9353FF;
+    }
+}
